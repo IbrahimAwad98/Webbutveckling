@@ -1,36 +1,75 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Ibrahim.css"> <!---länka css file som visar sid struk och utseende-->
-    <link href='https://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' /> <!--typsnitt-->
-    <title>Ibrahim Awad</title>
-</head>
-<body class="Start" text="white">
-<header>
-    <div class="A">
-        <h1>My First Page - Ibrahim Awad</h1>
-    </div>
-    <p class="tagline">Den här sidan kommer att presentera mig! <br>Welcome! 🌞</br></p>
-</header>
-<section class="menu">
-    <h2><a href="Personal_Info.html">ABOUT ME! 👨‍💻</a></h2>
-    <p>Här kommer ni att veta allt personliga informationer om mig!</p>
-</section>
-<section class="menu">
-    <h2><a href="Hobbies.html">HOBBIES! 😃</a></h2>
-    <p>Här kommer ni att veta allting som jag tycker såsom aktiviter och hobbyer!</p>
-</section>
-<section class="menu">
-    <h2><a href="Skills.html">SKILLS! 🏋️‍♂️</a></h2>
-    <p>Här kommer ni att veta om mina kompetens har jag nuförtiden!</p>
-</section>
-<section class="menu">
-    <h2><a href="ContactMe.html">CONTACT ME! 📞</a></h2>
-    <p>Här kan ni kontakta mig!</p>
-</section>
-<footer>Ibrahim Awad ©</footer> <!--copy right ned i sidan-->  
-</body>
-</html>
+/* === Grundinställningar === */
+body {
+    margin: 0;
+    font-family: 'Merienda One', cursive, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    color: white;
+    text-align: center;
+}
+
+/* === Header === */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px 20px;
+    border-bottom: 3px solid #f9d342;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #f9d342;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ddd;
+}
+
+/* === Meny-sektioner === */
+.menu {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.menu:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.menu h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f9d342;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+.menu p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* === Footer === */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+    color: #aaa;
+}
